@@ -57,6 +57,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "class_properties", "class_properties\class_properties.vcxproj", "{293CE84F-834B-4BEF-902C-7D37CE5F4576}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Inheritance", "06-Inheritance", "{AC32FE66-EA61-435A-A696-8DD1EB9B0144}"
+	ProjectSection(SolutionItems) = preProject
+		06-Inheritance\inheritance.py = 06-Inheritance\inheritance.py
+		06-Inheritance\inheritance.pyd = 06-Inheritance\inheritance.pyd
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inheritance", "inheritance\inheritance.vcxproj", "{707DFC7B-48DA-4BC9-A68A-E456379F5D39}"
 EndProject
