@@ -24,18 +24,25 @@
    ;
    ```
 
-5. Execute b2 command:
+5. ~~Execute b2 command to install~~ (***Not Recommend***):
 
    ```bash
    .\b2
    ```
 
-   Execute with config argments such as:
+   Execute with config argments to build **Python** lib only (***Recommend***) 
 
+   static link lib version such as:
+   
    ```bash
-   .\b2 toolset=msvc-14.0 --with-python variant=debug runtime-debugging=on stage --stagedir="./bin/lib32-msvc-14.0" link=static --user-config=user-config.jam address-model=64
+.\b2 toolset=msvc-14.1 --with-python stage link=static runtime-link=shared --user-config=user-config.jam address-model=64 debug release
    ```
-
+   
+   dynamic link lib version such as:
+   
+   ```bash
+   .\b2 toolset=msvc-14.1 --with-python stage link=shared runtime-link=shared --user-config=user-config.jam address-model=64 debug release
+   ```
 
 ## 2. Coding with Visual Studio 2017
 
@@ -99,4 +106,6 @@
 ## References
 
 [C++与Python混合编程：Boost.python的安装与使用](https://www.jianshu.com/p/5ccf00a6ca28)
+
+[boost 1.56.0 编译及使用](https://www.cnblogs.com/zhcncn/p/3950477.html)
 
