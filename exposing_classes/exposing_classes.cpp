@@ -19,5 +19,5 @@ BOOST_PYTHON_MODULE(exposing_classes)
     class_<World>("World")
         .def("greet", &World::greet)
         .def("set", &World::set)
-        ;
+    ;
 }

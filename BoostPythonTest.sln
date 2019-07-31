@@ -32,6 +32,34 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exposing_classes", "exposin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_world", "hello_world\hello_world.vcxproj", "{71621F5B-7A5F-4700-8521-E289D2201214}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "constructors", "constructors\constructors.vcxproj", "{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Constructors", "03-Constructors", "{39969BD0-FCCA-4259-9D2D-2C8D97AF9C94}"
+	ProjectSection(SolutionItems) = preProject
+		03-Constructors\constructors.py = 03-Constructors\constructors.py
+		03-Constructors\constructors.pyd = 03-Constructors\constructors.pyd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Class Data Members", "04-Class Data Members", "{66F529F7-57F1-4E08-8AF6-AB9C778AC936}"
+	ProjectSection(SolutionItems) = preProject
+		04-Class Data Members\class_data_members.py = 04-Class Data Members\class_data_members.py
+		04-Class Data Members\class_data_members.pyd = 04-Class Data Members\class_data_members.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "class_data_members", "class_data_members\class_data_members.vcxproj", "{7F79737E-22C9-42C9-A40A-770CB768D12B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Class Properties", "05-Class Properties", "{6AF0C2B5-3876-4B63-A0C2-33DEFFAA08E0}"
+	ProjectSection(SolutionItems) = preProject
+		05-Class Properties\class_properties.py = 05-Class Properties\class_properties.py
+		05-Class Properties\class_properties.pyd = 05-Class Properties\class_properties.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "class_properties", "class_properties\class_properties.vcxproj", "{293CE84F-834B-4BEF-902C-7D37CE5F4576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Inheritance", "06-Inheritance", "{AC32FE66-EA61-435A-A696-8DD1EB9B0144}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inheritance", "inheritance\inheritance.vcxproj", "{707DFC7B-48DA-4BC9-A68A-E456379F5D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -64,6 +92,38 @@ Global
 		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x64.Build.0 = Release|x64
 		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x86.ActiveCfg = Release|Win32
 		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x86.Build.0 = Release|Win32
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Debug|x64.ActiveCfg = Debug|x64
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Debug|x64.Build.0 = Debug|x64
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Debug|x86.Build.0 = Debug|Win32
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Release|x64.ActiveCfg = Release|x64
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Release|x64.Build.0 = Release|x64
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Release|x86.ActiveCfg = Release|Win32
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1}.Release|x86.Build.0 = Release|Win32
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Debug|x64.ActiveCfg = Debug|x64
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Debug|x64.Build.0 = Debug|x64
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Debug|x86.Build.0 = Debug|Win32
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Release|x64.ActiveCfg = Release|x64
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Release|x64.Build.0 = Release|x64
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Release|x86.ActiveCfg = Release|Win32
+		{7F79737E-22C9-42C9-A40A-770CB768D12B}.Release|x86.Build.0 = Release|Win32
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Debug|x64.ActiveCfg = Debug|x64
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Debug|x64.Build.0 = Debug|x64
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Debug|x86.ActiveCfg = Debug|Win32
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Debug|x86.Build.0 = Debug|Win32
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Release|x64.ActiveCfg = Release|x64
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Release|x64.Build.0 = Release|x64
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Release|x86.ActiveCfg = Release|Win32
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576}.Release|x86.Build.0 = Release|Win32
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Debug|x64.ActiveCfg = Debug|x64
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Debug|x64.Build.0 = Debug|x64
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Debug|x86.ActiveCfg = Debug|Win32
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Debug|x86.Build.0 = Debug|Win32
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Release|x64.ActiveCfg = Release|x64
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Release|x64.Build.0 = Release|x64
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Release|x86.ActiveCfg = Release|Win32
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +132,10 @@ Global
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 		{71621F5B-7A5F-4700-8521-E289D2201214} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{5FF175DC-57E6-4F2B-AED5-D963CCB91BE1} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{7F79737E-22C9-42C9-A40A-770CB768D12B} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{293CE84F-834B-4BEF-902C-7D37CE5F4576} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{707DFC7B-48DA-4BC9-A68A-E456379F5D39} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC3E8996-2AB1-411C-94FF-B1B08AE4949B}
