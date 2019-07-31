@@ -48,7 +48,7 @@
 
 1. Create a C++ Empty Solution and a C++ Empty Project.
 
-2. Add a C++ file(.cpp) such as `hello_ext.cpp`.
+2. Add a C++ file(.cpp) such as `hello_world.cpp`.
 
    ```C++
    // 当引入 #include <boost/python/xxx> 时，Boost 会默认链接 boost_python 动态链接库，
@@ -65,7 +65,7 @@
        return "hello, world";
    }
    
-   BOOST_PYTHON_MODULE(hello_ext)  // Python 模块开始，与文件名一致
+   BOOST_PYTHON_MODULE(hello_world)  // Python 模块开始，与文件名一致
    {
        using namespace boost::python;  // 打开命名空间
        def("greet", greet);
@@ -82,14 +82,14 @@
 
 ## 3. Python Scripts
 
-1. Create a python script such as `hello.py`:
+1. Create a python script such as `hello_world.py`:
 
    ```python
-   import hello_ext
-   print(hello_ext.greet())
+   import hello_world
+   print(hello_world.greet())
    ```
 
-2. Copy `hello_ext.pyd` to the same directory (from builded project).
+2. Copy `hello_world.pyd` to the same directory (from builded project).
 
 3. Run it.
 

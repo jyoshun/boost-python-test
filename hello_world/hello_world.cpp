@@ -3,17 +3,16 @@
 #define BOOST_PYTHON_STATIC_LIB
 
 #include <boost/python.hpp>
-#include <iostream>
-#include <stdio.h>
 
-// C++ Code
+// A C++ Function
 char const* greet()
 {
     return "hello, world";
 }
 
-BOOST_PYTHON_MODULE(hello_ext)  // Python 模块开始
+// Writing a Boost.Python wrapper
+BOOST_PYTHON_MODULE(hello_world)  // Python Module
 {
-    using namespace boost::python;  // 打开命名空间
+    using namespace boost::python;  // using namespace
     def("greet", greet);
 }

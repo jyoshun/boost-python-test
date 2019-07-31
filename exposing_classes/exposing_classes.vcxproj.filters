@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="hello_ext.cpp">
+    <ClCompile Include="exposing_classes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

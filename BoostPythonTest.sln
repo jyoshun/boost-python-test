@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_ext", "hello_ext\hello_ext.vcxproj", "{FAB6228A-6F43-42D8-916E-3593522D69A5}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost_python_hello", "boost_python_hello\boost_python_hello.vcxproj", "{3178E0AB-BBC3-47D6-9424-08298E1D9491}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Boost C++ Projects", "Boost C++ Projects", "{4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}"
@@ -15,14 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\user-config.jam = ..\user-config.jam
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-HelloWorld", "01-HelloWorld", "{6AF97399-460C-4342-A975-F96814920D23}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Hello World", "01-Hello World", "{6AF97399-460C-4342-A975-F96814920D23}"
 	ProjectSection(SolutionItems) = preProject
 		01-HelloWorld\boost_python37-vc141-mt-gd-x64-1_68.dll = 01-HelloWorld\boost_python37-vc141-mt-gd-x64-1_68.dll
 		01-HelloWorld\boost_python_hello.exe = 01-HelloWorld\boost_python_hello.exe
 		01-HelloWorld\boost_python_hello.py = 01-HelloWorld\boost_python_hello.py
-		01-HelloWorld\hello.py = 01-HelloWorld\hello.py
-		01-HelloWorld\hello_ext.pyd = 01-HelloWorld\hello_ext.pyd
+		01-HelloWorld\hello_world.py = 01-HelloWorld\hello_world.py
+		01-HelloWorld\hello_world.pyd = 01-HelloWorld\hello_world.pyd
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Exposing Classes", "02-Exposing Classes", "{DCFAF5C4-0E5B-47F1-8FA7-4185E3C87D02}"
+	ProjectSection(SolutionItems) = preProject
+		02-exposing_classes\exposing_classes.py = 02-exposing_classes\exposing_classes.py
+		02-exposing_classes\exposing_classes.pyd = 02-exposing_classes\exposing_classes.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exposing_classes", "exposing_classes\exposing_classes.vcxproj", "{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_world", "hello_world\hello_world.vcxproj", "{71621F5B-7A5F-4700-8521-E289D2201214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,14 +40,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Debug|x64.ActiveCfg = Debug|x64
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Debug|x64.Build.0 = Debug|x64
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Debug|x86.ActiveCfg = Debug|Win32
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Debug|x86.Build.0 = Debug|Win32
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Release|x64.ActiveCfg = Release|x64
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Release|x64.Build.0 = Release|x64
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Release|x86.ActiveCfg = Release|Win32
-		{FAB6228A-6F43-42D8-916E-3593522D69A5}.Release|x86.Build.0 = Release|Win32
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Debug|x64.ActiveCfg = Debug|x64
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Debug|x64.Build.0 = Debug|x64
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Debug|x86.ActiveCfg = Debug|Win32
@@ -48,13 +48,30 @@ Global
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Release|x64.Build.0 = Release|x64
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Release|x86.ActiveCfg = Release|Win32
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491}.Release|x86.Build.0 = Release|Win32
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Debug|x64.ActiveCfg = Debug|x64
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Debug|x64.Build.0 = Debug|x64
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Debug|x86.Build.0 = Debug|Win32
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Release|x64.ActiveCfg = Release|x64
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Release|x64.Build.0 = Release|x64
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Release|x86.ActiveCfg = Release|Win32
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78}.Release|x86.Build.0 = Release|Win32
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Debug|x64.ActiveCfg = Debug|x64
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Debug|x64.Build.0 = Debug|x64
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Debug|x86.ActiveCfg = Debug|Win32
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Debug|x86.Build.0 = Debug|Win32
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x64.ActiveCfg = Release|x64
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x64.Build.0 = Release|x64
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x86.ActiveCfg = Release|Win32
+		{71621F5B-7A5F-4700-8521-E289D2201214}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FAB6228A-6F43-42D8-916E-3593522D69A5} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 		{3178E0AB-BBC3-47D6-9424-08298E1D9491} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{C2B5DC90-04BC-4E55-A74D-DB1F1F877B78} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{71621F5B-7A5F-4700-8521-E289D2201214} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC3E8996-2AB1-411C-94FF-B1B08AE4949B}
