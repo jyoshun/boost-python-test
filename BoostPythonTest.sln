@@ -7,11 +7,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_ext", "hello_ext\hell
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boost_python_hello", "boost_python_hello\boost_python_hello.vcxproj", "{3178E0AB-BBC3-47D6-9424-08298E1D9491}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BoostPythonLearn", "BoostPythonLearn", "{4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Boost C++ Projects", "Boost C++ Projects", "{4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F09A211A-64C7-42A2-BAF6-22C04CCCF35C}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		..\user-config.jam = ..\user-config.jam
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-HelloWorld", "01-HelloWorld", "{6AF97399-460C-4342-A975-F96814920D23}"
+	ProjectSection(SolutionItems) = preProject
+		01-HelloWorld\boost_python37-vc141-mt-gd-x64-1_68.dll = 01-HelloWorld\boost_python37-vc141-mt-gd-x64-1_68.dll
+		01-HelloWorld\boost_python_hello.exe = 01-HelloWorld\boost_python_hello.exe
+		01-HelloWorld\boost_python_hello.py = 01-HelloWorld\boost_python_hello.py
+		01-HelloWorld\hello.py = 01-HelloWorld\hello.py
+		01-HelloWorld\hello_ext.pyd = 01-HelloWorld\hello_ext.pyd
 	EndProjectSection
 EndProject
 Global

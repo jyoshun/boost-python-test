@@ -9,7 +9,7 @@
 3. Execute boostrap.bat:
 
    ```bash
-   ./bootstrap.bat
+   .\bootstrap.bat
    ```
 
 4. (optional) Copy file `user-config.jam` from `tools\build\example\` to extract path. Edit it such as:
@@ -27,18 +27,17 @@
 5. Execute b2 command:
 
    ```bash
-   ./b2
+   .\b2
    ```
 
    Execute with config argments such as:
 
    ```bash
-   ./b2 toolset=msvc-14.0 --with-python variant=debug runtime-debugging=on stage --stagedir="./bin/lib32-msvc-14.0" link=static --user-config=user-config.jam address-model=64
+   .\b2 toolset=msvc-14.0 --with-python variant=debug runtime-debugging=on stage --stagedir="./bin/lib32-msvc-14.0" link=static --user-config=user-config.jam address-model=64
    ```
 
-   or else.
 
-## 2. Coding with VIsual Studio 2017
+## 2. Coding with Visual Studio 2017
 
 1. Create a C++ Empty Solution and a C++ Empty Project.
 
@@ -66,14 +65,15 @@
    }
    ```
 
-3. Edit Project Protities.
+3. Edit Project Properties:
    1. Properties --> C/C++ --> General --> Additional Include Directories :  Add boost root directory path, such as `C:\Program Files\boost\boost_1_68_0`, and Python include directory path, such as `C:\ProgramData\Anaconda3\include`.
-   2. Properties --> Linker --> Input --> Additional Dependencies :  Add boost lib directory path, such as `C:\Program Files\boost\boost_1_68_0\stage\lib`， and Python lib directory path, such as `C:\ProgramData\Anaconda3\libs`.
-   3. Properties --> Configuration Properties --> General --> Project Defaults :  Set `Configuration Type` as `Dynamic Library(.dll)`, `Filename Extension` as `.pyd`.
-
+   2. Properties --> Linker --> General --> Additional Library Directories :  Add boost lib directory path, such as `C:\Program Files\boost\boost_1_68_0\stage\lib`， and Python lib directory path, such as `C:\ProgramData\Anaconda3\libs`.
+   3. Properties --> Linker --> Input --> Additional Dependencies :  Add boost lib file, such as `C:\Program Files\boost\boost_1_68_0\stage\lib\lib**.lib`.
+4. Properties --> Configuration Properties --> General --> Project Defaults :  Set `Configuration Type` as `Dynamic Library(.dll)`, `Filename Extension` as `.pyd`.
+   
 4. Build the project.
 
-## 3. Writing Python Scripts.
+## 3. Python Scripts
 
 1. Create a python script such as `hello.py`:
 
@@ -82,12 +82,21 @@
    print(hello_ext.greet())
    ```
 
-2. Copy `hello_ext.pyd` to same directory (from builded project).
+2. Copy `hello_ext.pyd` to the same directory (from builded project).
 
 3. Run it.
 
-   ```
-   hello, world
+   ```bash
+   >>> hello, world
    ```
 
+## Problems & Solutions
+
+1. **Problem:** error C3861: 'unwind_type': identifier not found.
+
+   **Solution:** Enable forward declaration of unwind_type() in msvc14.15 and later. Use [this file](https://github.com/boostorg/python/commit/0d0cd711a764a3b32d2cd19a1049eb9f36b4fd06) to replace the old `unwind_type.hpp` file.
+
+## References
+
+[C++与Python混合编程：Boost.python的安装与使用](https://www.jianshu.com/p/5ccf00a6ca28)
 

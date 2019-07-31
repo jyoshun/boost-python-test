@@ -19,4 +19,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="boost_python_hello.py">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="boost_python37-vc141-mt-gd-x64-1_68.dll">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
 </Project>
