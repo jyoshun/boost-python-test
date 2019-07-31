@@ -35,10 +35,8 @@
    static link lib version such as:
    
    ```bash
-.\b2 toolset=msvc-14.1 --with-python stage link=static runtime-link=shared --user-config=user-config.jam address-model=64 debug release
+    .\b2 toolset=msvc-14.1 --with-python stage link=static runtime-link=shared --user-config=user-config.jam address-model=64 debug release
    ```
-   
-   
    
    dynamic link lib version such as:
    
