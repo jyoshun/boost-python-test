@@ -16,18 +16,18 @@ public:
 };
 
 // a set of operators that take on FilePos instances
-NumberLike&    operator+=(NumberLike& fp, NumberLike other) { fp.value += other.value; return fp; };
-NumberLike&    operator+=(NumberLike& fp, int i) { fp.value += i; return fp; };
-NumberLike&    operator-=(NumberLike& fp, NumberLike other) { fp.value -= other.value; return fp; };
-NumberLike&    operator-=(NumberLike& fp, int i) { fp.value -= i; return fp; };
-NumberLike     operator+(NumberLike fp, NumberLike other) { fp += other; return fp; };
-NumberLike     operator+(NumberLike fp, int i) { fp += i; return fp; };
-NumberLike     operator+(int i, NumberLike fp) { fp += i; return fp; };
-NumberLike     operator-(NumberLike fp, NumberLike other) { fp -= other; return fp; };
-NumberLike     operator-(NumberLike fp, int i) { fp -= i; return fp; };
-NumberLike     operator-(int i, NumberLike fp) { fp.value = i - fp.value; return fp; };
-bool           operator<(NumberLike fp, NumberLike other) { return (fp - other).value < 0; };
-bool           operator>(NumberLike fp, NumberLike other) { return (fp - other).value > 0; };
+NumberLike&    operator+=(NumberLike& n, NumberLike other) { n.value += other.value; return n; };
+NumberLike&    operator+=(NumberLike& n, int i) { n.value += i; return n; };
+NumberLike&    operator-=(NumberLike& n, NumberLike other) { n.value -= other.value; return n; };
+NumberLike&    operator-=(NumberLike& n, int i) { n.value -= i; return n; };
+NumberLike     operator+(NumberLike n, NumberLike other) { n += other; return n; };
+NumberLike     operator+(NumberLike n, int i) { n += i; return n; };
+NumberLike     operator+(int i, NumberLike n) { n += i; return n; };
+NumberLike     operator-(NumberLike n, NumberLike other) { n -= other; return n; };
+NumberLike     operator-(NumberLike n, int i) { n -= i; return n; };
+NumberLike     operator-(int i, NumberLike n) { n.value = i - n.value; return n; };
+bool           operator<(NumberLike n, NumberLike other) { return (n - other).value < 0; };
+bool           operator>(NumberLike n, NumberLike other) { return (n - other).value > 0; };
 
 BOOST_PYTHON_MODULE(python_operators)
 {

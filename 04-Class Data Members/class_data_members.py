@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import class_data_members
 
 x = class_data_members.Var('pi')

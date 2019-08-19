@@ -88,6 +88,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09-Python Operators", "09-P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "python_operators", "python_operators\python_operators.vcxproj", "{C81EBCFB-6930-42CF-A9EA-17BF19B5F495}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10-Special Methods", "10-Special Methods", "{2C9F5B20-1D63-4598-9E34-AA4FCCB826BE}"
+	ProjectSection(SolutionItems) = preProject
+		10-Special Methods\special_methods.py = 10-Special Methods\special_methods.py
+		10-Special Methods\special_methods.pyd = 10-Special Methods\special_methods.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "special_methods", "special_methods\special_methods.vcxproj", "{94733EED-813D-4DBE-8016-227BA9954FBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11-Call Policies", "11-Call Policies", "{B654A254-7932-4FCF-B113-718242C425BB}"
+	ProjectSection(SolutionItems) = preProject
+		11-Call Policies\call_policies.py = 11-Call Policies\call_policies.py
+		11-Call Policies\call_policies.pyd = 11-Call Policies\call_policies.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "call_policies", "call_policies\call_policies.vcxproj", "{715FCB63-40D5-478D-B87B-EB5C572EC94D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12-Overloading", "12-Overloading", "{BE004128-DD4B-4A02-AAB6-6F27F4DB99BF}"
+	ProjectSection(SolutionItems) = preProject
+		12-Overloading\overloading.py = 12-Overloading\overloading.py
+		12-Overloading\overloading.pyd = 12-Overloading\overloading.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "overloading", "overloading\overloading.vcxproj", "{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13-Default Arguments", "13-Default Arguments", "{6123D57F-DB10-4A15-8DB1-FE499A29CA3E}"
+	ProjectSection(SolutionItems) = preProject
+		13-Default Arguments\default_arguments.py = 13-Default Arguments\default_arguments.py
+		13-Default Arguments\default_arguments.pyd = 13-Default Arguments\default_arguments.pyd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "default_arguments", "default_arguments\default_arguments.vcxproj", "{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14-Auto-Overloading", "14-Auto-Overloading", "{EE52F4A2-8137-412C-A856-DA8EB202D40B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "auto_overloading", "auto_overloading\auto_overloading.vcxproj", "{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -176,6 +212,46 @@ Global
 		{C81EBCFB-6930-42CF-A9EA-17BF19B5F495}.Release|x64.Build.0 = Release|x64
 		{C81EBCFB-6930-42CF-A9EA-17BF19B5F495}.Release|x86.ActiveCfg = Release|Win32
 		{C81EBCFB-6930-42CF-A9EA-17BF19B5F495}.Release|x86.Build.0 = Release|Win32
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Debug|x64.ActiveCfg = Debug|x64
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Debug|x64.Build.0 = Debug|x64
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Debug|x86.ActiveCfg = Debug|Win32
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Debug|x86.Build.0 = Debug|Win32
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Release|x64.ActiveCfg = Release|x64
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Release|x64.Build.0 = Release|x64
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Release|x86.ActiveCfg = Release|Win32
+		{94733EED-813D-4DBE-8016-227BA9954FBB}.Release|x86.Build.0 = Release|Win32
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Debug|x64.ActiveCfg = Debug|x64
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Debug|x64.Build.0 = Debug|x64
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Debug|x86.ActiveCfg = Debug|Win32
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Debug|x86.Build.0 = Debug|Win32
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Release|x64.ActiveCfg = Release|x64
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Release|x64.Build.0 = Release|x64
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Release|x86.ActiveCfg = Release|Win32
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D}.Release|x86.Build.0 = Release|Win32
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Debug|x64.ActiveCfg = Debug|x64
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Debug|x64.Build.0 = Debug|x64
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Debug|x86.Build.0 = Debug|Win32
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Release|x64.ActiveCfg = Release|x64
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Release|x64.Build.0 = Release|x64
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Release|x86.ActiveCfg = Release|Win32
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10}.Release|x86.Build.0 = Release|Win32
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Debug|x64.ActiveCfg = Debug|x64
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Debug|x64.Build.0 = Debug|x64
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Debug|x86.Build.0 = Debug|Win32
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Release|x64.ActiveCfg = Release|x64
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Release|x64.Build.0 = Release|x64
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Release|x86.ActiveCfg = Release|Win32
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9}.Release|x86.Build.0 = Release|Win32
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Debug|x64.ActiveCfg = Debug|x64
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Debug|x64.Build.0 = Debug|x64
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Debug|x86.Build.0 = Debug|Win32
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Release|x64.ActiveCfg = Release|x64
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Release|x64.Build.0 = Release|x64
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Release|x86.ActiveCfg = Release|Win32
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +267,11 @@ Global
 		{4A80FF6D-75F3-46BE-A5C9-B40EFEDFD6D0} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 		{A47A5680-17B3-4EF6-944C-0604E7776A8A} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 		{C81EBCFB-6930-42CF-A9EA-17BF19B5F495} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{94733EED-813D-4DBE-8016-227BA9954FBB} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{715FCB63-40D5-478D-B87B-EB5C572EC94D} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{0C9CB3B6-7D4E-45E0-8C5F-3F6311E15C10} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{D8B99216-20DA-4560-9B6F-EF45F7B71AA9} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
+		{639E20AF-2387-4CE3-8988-A37AAEE8E9FF} = {4129AB76-6222-4C7F-B687-2D7EEF6B6DAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC3E8996-2AB1-411C-94FF-B1B08AE4949B}

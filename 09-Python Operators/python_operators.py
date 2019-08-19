@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import python_operators
 
 n = python_operators.NumberLike(7)

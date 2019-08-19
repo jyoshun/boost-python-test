@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import class_virtual_functions
 
 class PythonDerived(class_virtual_functions.Base):

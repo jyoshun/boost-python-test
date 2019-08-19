@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import virtual_functions_with_default_implementations
 
 base = virtual_functions_with_default_implementations.Base()
